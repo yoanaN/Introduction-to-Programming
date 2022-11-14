@@ -2,10 +2,14 @@
 using namespace std;
 
 int main() {
+
 	char letter;
+	cout << "Inser starting letter: ";
 	cin >> letter;
 
-	int numLine = 5;
+	int numLine;
+	cout << "Insert number of rows: ";
+	cin >> numLine;
 	int counter = 1;
 	
 	cout << endl;
