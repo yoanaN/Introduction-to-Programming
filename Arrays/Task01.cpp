@@ -13,11 +13,9 @@ double minElement(double* a,int n) {
 
 double sumElemens(double* a, int n) {
 	double sum = 0;
-	for (int i = 0;i < n;i++) {
-		cout << "Insert element a" << i << ": ";
-		cin >> a[i];
+	for (int i = 0;i < n;i++)
 		sum += a[i];
-	}
+	
 	return sum;
 }
 
@@ -27,6 +25,10 @@ int main() {
 	cin >> n;
 
 	double a[MAX_SIZE];
+	for (int i = 0;i < n;i++) {
+		cout << "Insert element a" << i << ": ";
+		cin >> a[i];
+	}
 
 	double sum = sumElemens(a,n);	
 	double average = sum / n;
